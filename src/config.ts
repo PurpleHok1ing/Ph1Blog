@@ -14,14 +14,13 @@ import type {
 } from "./types/config";
 import { LinkPreset } from "./types/config";
 
-
 // 移除i18n导入以避免循环依赖
 
 // 定义站点语言
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "1 ph",
+	title: "ph1's home",
 	subtitle: "One SHOT!",
 
 	lang: SITE_LANG,
@@ -31,7 +30,6 @@ export const siteConfig: SiteConfig = {
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
 
-	
 	bangumi: {
 		userId: "your-bangumi-id", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
 	},
@@ -86,13 +84,13 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Beautiful Mizuki!", // 主页横幅主标题
+			title: "YanamiAnna No.2!", // 主页横幅主标题
 
 			subtitle: [
-				"A Showcase Demo Site",
-				"Carousel Highlight: Innovation",
-				"Carousel Focus: User Experience",
-				"Carousel Spot: Core Advantages",
+				"你知道吗？我也不知道",
+				"Death For Truth",
+				'system.out("AI = ai");',
+				"生如夏花之绚烂，死如秋叶之静美",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -115,7 +113,7 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	toc: {
-		enable: true, // 启用目录功能
+		enable: false, // 启用目录功能
 		depth: 3, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
 	},
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
@@ -185,7 +183,7 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					url: "https://github.com/PurpleHok1ingi",
 					external: true,
 					icon: "fa6-brands:github",
 				},
@@ -195,12 +193,12 @@ export const navBarConfig: NavBarConfig = {
 					external: true,
 					icon: "fa6-brands:bilibili",
 				},
-				{
+				/** 			{
 					name: "Gitee",
 					url: "https://gitee.com/matsuzakayuki/Mizuki",
 					external: true,
 					icon: "mdi:git",
-				},
+				}, */
 			],
 		},
 		{
@@ -249,24 +247,24 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Mizuki",
-	bio: "The world is big, you have to go and see",
+	avatar: "assets/images/yanami anna.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "Ph1hk",
+	bio: "这世上只有两种人，一种是青梅竹马，一种是偷腥猫.",
 	links: [
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			url: "https://github.com/PurpleHok1ingi",
 		},
-		{
+		/** {
 			name: "Gitee",
 			icon: "mdi:git",
 			url: "https://gitee.com/matsuzakayuki",
-		},
+		}, */
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/PurpleHok1ingi",
 		},
 		{
 			name: "Discord",
@@ -465,16 +463,11 @@ export const pioConfig: import("./types/config").PioConfig = {
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to Mizuki Website!", // 欢迎词
-		touch: [
-			"What are you doing?",
-			"Stop touching me!",
-			"HENTAI!",
-			"Don't bully me like that!",
-		], // 触摸提示
-		home: "Click here to go back to homepage!", // 首页提示
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
-		close: "QWQ See you next time~", // 关闭提示
+		welcome: "Welcome to Ph1hk Blog!", // 欢迎词
+		touch: ["i'm not a ez girl.", "BAKA!", "HENTAI!", "What r u doing?"], // 触摸提示
+		home: "点击这里回到首页！", // 首页提示
+		skin: ["想看看我的新衣服吗？", "新衣服真漂亮~"], // 换装提示
+		close: "QWQ 下次再见吧~", // 关闭提示
 		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
 	},
 };
