@@ -183,7 +183,7 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/PurpleHok1ingi",
+					url: "https://github.com/PurpleHok1ing",
 					external: true,
 					icon: "fa6-brands:github",
 				},
@@ -254,7 +254,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://github.com/PurpleHok1ingi",
+			url: "https://space.bilibili.com/701864046",
 		},
 		/** {
 			name: "Gitee",
@@ -264,7 +264,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/PurpleHok1ingi",
+			url: "https://github.com/PurpleHok1ing",
 		},
 		{
 			name: "Discord",
